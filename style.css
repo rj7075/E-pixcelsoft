@@ -1,0 +1,470 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-buttons .login-btn, .nav-buttons .register-btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+}
+
+.register-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('./images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+.headline {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    margin: 10px;
+    display: block;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    padding: 14px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px;
+    margin-left: 10px;
+}
+
+.feature-box {
+    width: 30%;
+    text-align: left;
+    padding: 14px;
+
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.feature-box p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.learn-more {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  
+}
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+/* Social Media Section */
+/* General Section Styling */
+.social-media-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Content Layout using Flexbox */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1;
+}
+
+.text-item {
+    margin-bottom: 30px;
+
+}
+
+.text-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.text-item p {
+    font-size: 1rem;
+    color: #666;
+    padding: 8px;
+    margin:10px;
+}
+
+/* Image Styling */
+.image-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+
+.image-box {
+    margin-top: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Stylish Photos Section */
+.stylish-photos {
+    padding: 60px 0;
+    text-align: center;
+   
+
+}
+
+.stylish-photos h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.stylish-photos p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 12px;
+}
+
+
+.stylish-photos .feature-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stylish-photos .feature-box {
+    width: 30%;
+    text-align: left;
+}
+
+.stylish-photos img {
+    width: 100%;
+    height: auto;
+}
+
+/* Signup Section */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.signup-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup-header h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.signup-header p {
+    color: #555;
+    font-size: 20px;
+}
+
+/* Form Box Styling */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-row .form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+small.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+.register-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff9800; /* Change to your hover color */
+}
+
+/* Social Media Icons */
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Set appropriate size for your icons */
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
